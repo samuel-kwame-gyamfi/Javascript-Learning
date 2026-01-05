@@ -10,4 +10,12 @@ const circle = {
   },
 };
 
-circle.draw();
+//factory function
+
+function createCircle(radius, location) {
+  return {
+    radius: radius,
+    location: location,
+    draw() {},
+  };
+}
